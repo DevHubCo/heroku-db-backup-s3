@@ -32,7 +32,7 @@ chmod +x $BUILD_DIR/.profile.d/install_awscli.sh
 INSTALL_DIR="/app/vendor/awscli"
 mkdir -p $INSTALL_DIR
 chmod +x /tmp/aws/install
-/tmp/aws/install -i $INSTALL_DIR
+/tmp/aws/install -i $INSTALL_DIR -b $BUILD_DIR/bin
 chmod u+x $INSTALL_DIR/bin/aws
 cp -r $INSTALL_DIR $BUILD_DIR/vendor/
 
